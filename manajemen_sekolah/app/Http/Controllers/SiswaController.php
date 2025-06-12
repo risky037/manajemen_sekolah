@@ -11,7 +11,11 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        //
+        // Fetch all students from the database
+        $siswas = \App\Models\Siswa::all();
+
+        // Return the view with the list of students
+        return view('siswa.index', compact('siswas'));
     }
 
     /**

@@ -7,7 +7,7 @@
     <h2>Data Siswa</h2>
     <a href="{{ route('siswa.create') }}">Tambah Siswa</a>
     <table>
-        @foreach ($siswa as $s)
+        @foreach ($siswas as $s)
             <tr>
                 <td>{{ $s->nama }}</td>
                 <td>{{ $s->kelas }}</td>
