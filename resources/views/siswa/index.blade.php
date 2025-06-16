@@ -3,8 +3,8 @@
 @section('content')
     <h2>Data Siswa</h2>
     <a href="{{ route('siswa.create') }}"
-       style="padding: 8px 12px; background-color: #27ae60; color: white; border-radius: 4px; text-decoration: none;">
-       ➕ Tambah Siswa
+        style="padding: 8px 12px; background-color: #27ae60; color: white; border-radius: 4px; text-decoration: none;">
+        ➕ Tambah Siswa
     </a>
     <br><br>
     <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse;">
