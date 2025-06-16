@@ -10,7 +10,7 @@ class Guru extends Model
     use HasFactory;
 
     // Jika nama tabel bukan 'gurus', sebutkan eksplisit
-    protected $table = 'guru';
+    protected $table = 'gurus';
 
     // Jika tabel tidak menggunakan timestamps (created_at & updated_at)
     public $timestamps = false;

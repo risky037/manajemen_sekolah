@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Dashboard Sekolah</title>
@@ -59,6 +60,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="sidebar">
@@ -66,13 +68,13 @@
         <a href="{{ route('dashboard') }}">🏠 Beranda</a>
         <a href="{{ route('guru.index') }}">👨‍🏫 Guru</a>
         <a href="{{ route('siswa.index') }}">👨‍🎓 Siswa</a>
-        <a href="{{ route('kelas.index') }}">🏫 Kelas</a>
-        <a href="{{ route('mapel.index') }}">📚 Mata Pelajaran</a>
-        <a href="{{ route('logout') }}"
-           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+        <a href="#{{-- route('kelas.index') --}}">🏫 Kelas</a>
+        <a href="#{{-- route('mapel.index') --}}">📚 Mata Pelajaran</a>
+        <a href="#{{-- route('logout') --}}"
+            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             🚪 Logout
         </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        <form id="logout-form" action="# {{-- route('logout') --}}" method="POST" style="display: none;">
             @csrf
         </form>
     </div>
@@ -86,4 +88,5 @@
     </div>
 
 </body>
+
 </html>
