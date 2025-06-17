@@ -87,6 +87,6 @@
             <input type="text" name="mapel" id="mapel" required>
         </div>
 
-        <button type="submit"> Simpan</button>
+        <button type="submit">💾 Simpan</button>
     </form>
 @endsection
