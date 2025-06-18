@@ -12,6 +12,7 @@
             <tr>
                 <th>Nama</th>
                 <th>Kelas</th>
+                <th>Alamat</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +20,7 @@
                 <tr>
                     <td>{{ $s->nama }}</td>
                     <td>{{ $s->kelas }}</td>
+                    <td>{{ $s->Alamat }}</td>
                 </tr>
             @endforeach
         </tbody>

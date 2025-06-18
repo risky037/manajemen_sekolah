@@ -17,7 +17,11 @@
             <input type="text" name="kelas" id="kelas" required
                 style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
         </div>
-
+         <div style="margin-bottom: 15px;">
+            <label for="kelas" style="display: block; margin-bottom: 5px;">Alamat</label>
+            <input type="text" name="kelas" id="kelas" required
+                style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
         <button type="submit"
             style="padding: 10px 16px; background-color: #2980b9; color: white; border: none; border-radius: 4px;">
             💾 Simpan
