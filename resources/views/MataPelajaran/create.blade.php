@@ -4,7 +4,7 @@
     <div class="container">
         <h2>Tambah Mata Pelajaran</h2>
 
-        <form action="{{ route('mata_pelajaran.store') }}" method="POST" style="max-width: 400px;">
+        <form action="{{ route('mapel.store') }}" method="POST" style="max-width: 400px;">
             @csrf
 
             <div style="margin-bottom: 15px;">
@@ -24,7 +24,7 @@
                 💾 Simpan
             </button>
 
-            <a href="{{ route('mata_pelajaran.index') }}"
+            <a href="{{ route('mapel.index') }}"
                style="margin-left: 10px; padding: 10px 16px; background-color: #7f8c8d; color: white; border-radius: 4px; text-decoration: none;">
                 ↩️ Kembali
             </a>

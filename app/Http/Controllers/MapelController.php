@@ -1,9 +1,12 @@
 <?php
 
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
 use App\Models\MataPelajaran;
 use Illuminate\Http\Request;
 
-class MataPelajaranController extends Controller
+class MapelController extends Controller
 {
     public function index()
     {
@@ -19,7 +22,7 @@ class MataPelajaranController extends Controller
     public function store(Request $request)
     {
         MataPelajaran::create($request->all());
-        return redirect()->route('MataPelajaran.index')->with('success', 'Data berhasil ditambahkan');
+        return redirect()->route('mapel.index')->with('success', 'Data berhasil ditambahkan');
     }
 
     public function edit($id)
@@ -32,12 +35,12 @@ class MataPelajaranController extends Controller
     {
         $mapel = MataPelajaran::findOrFail($id);
         $mapel->update($request->all());
-        return redirect()->route('MataPelajaran.index')->with('success', 'Data berhasil diperbarui');
+        return redirect()->route('mapel.index')->with('success', 'Data berhasil diperbarui');
     }
 
     public function destroy($id)
     {
         MataPelajaran::destroy($id);
-        return redirect()->route('MataPelajaran.index')->with('success', 'Data berhasil dihapus');
+        return redirect()->route('mapel.index')->with('success', 'Data berhasil dihapus');
     }
 }

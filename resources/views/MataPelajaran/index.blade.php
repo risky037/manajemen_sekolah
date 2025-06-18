@@ -12,7 +12,7 @@
         @endif
 
         {{-- Tombol tambah --}}
-        <a href="{{ route('mata_pelajaran.create') }}"
+        <a href="{{ route('mapel.create') }}"
            style="display: inline-block; margin-bottom: 20px; padding: 10px 16px; background-color: #3498db; color: white; border-radius: 5px; text-decoration: none;">
             ➕ Tambah Mata Pelajaran
         </a>
@@ -34,12 +34,12 @@
                         <td>{{ $mapel->kode_mapel }}</td>
                         <td>{{ $mapel->nama_mapel }}</td>
                         <td>
-                            <a href="{{ route('mata_pelajaran.edit', $mapel->id) }}"
+                            <a href="{{ route('mapel.edit', $mapel->id) }}"
                                style="padding: 5px 10px; background-color: #f39c12; color: white; border-radius: 4px; text-decoration: none;">
                                 ✏️ Edit
                             </a>
 
-                            <form action="{{ route('mata_pelajaran.destroy', $mapel->id) }}" method="POST"
+                            <form action="{{ route('mapel.destroy', $mapel->id) }}" method="POST"
                                   style="display: inline-block;"
                                   onsubmit="return confirm('Yakin ingin menghapus data ini?')">
                                 @csrf
