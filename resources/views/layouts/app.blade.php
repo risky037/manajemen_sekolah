@@ -140,7 +140,7 @@
         <a href="{{ route('guru.index') }}">👨‍🏫 Guru</a>
         <a href="{{ route('siswa.index') }}">👨‍🎓 Siswa</a>
         <a href="#{{-- route('kelas.index') --}}">🏫 Kelas</a>
-        <a href="#{{-- route('mapel.index') --}}">📚 Mata Pelajaran</a>
+        <a href="{{ route('mapel.index') }}">📚 Mata Pelajaran</a>
         <a href="#{{-- route('logout') --}}"
             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             🚪 Logout
