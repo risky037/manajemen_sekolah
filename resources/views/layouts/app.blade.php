@@ -134,16 +134,23 @@
 
 <body>
 
-    <div class="sidebar">
+    <div class="sidebar" style="padding: 30px; width: 250px;">
+    <!-- Logo Sekolah -->
+    <div style="display: flex; justify-content: flex-start; align-items: center; padding-left: 10px; margin-bottom: 5px;">
+        <img src="{{ asset('images/logo_SMA-removebg-preview.png') }}" alt="Logo Sekolah"
+             style="width: 100px; height: auto;">
+    </div>
+
         <h2>Dashboard</h2>
         <a href="{{ route('dashboard') }}">🏠 Beranda</a>
         <a href="{{ route('guru.index') }}">👨‍🏫 Guru</a>
         <a href="{{ route('siswa.index') }}">👨‍🎓 Siswa</a>
         <a href="#{{-- route('kelas.index') --}}">🏫 Kelas</a>
         <a href="{{ route('mapel.index') }}">📚 Mata Pelajaran</a>
+        <a href="{{ route('materi.index') }}">📝 Materi Pelajaran</a> <!-- Menu Baru -->
         <a href="#{{-- route('logout') --}}"
             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            🚪 Logout
+              ↩️ Logout
         </a>
         <form id="logout-form" action="# {{-- route('logout') --}}" method="POST" style="display: none;">
             @csrf
@@ -152,7 +159,7 @@
 
     <div class="main-content">
         <div class="topbar">
-            <h3>Selamat Datang di Dashboard Sekolah</h3>
+            <h3>Selamat Datang !!!</h3>
         </div>
 
         @yield('content')

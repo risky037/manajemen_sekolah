@@ -34,20 +34,26 @@
                         <td>{{ $mapel->kode_mapel }}</td>
                         <td>{{ $mapel->nama_mapel }}</td>
                         <td>
-                            <a href="{{ route('mapel.edit', $mapel->id) }}"
-                               style="padding: 5px 10px; background-color: #f39c12; color: white; border-radius: 4px; text-decoration: none;">
-                                ✏️ Edit
-                            </a>
+                            <td style="text-align: center;">
+    <a href="{{ route('mapel.edit', $mapel->id) }}"
+       style="padding: 5px 10px; background-color: #f39c12; color: white; border-radius: 4px; text-decoration: none;">
+        ✏️ Edit
+    </a>
+</td>
+
 
                             <form action="{{ route('mapel.destroy', $mapel->id) }}" method="POST"
                                   style="display: inline-block;"
                                   onsubmit="return confirm('Yakin ingin menghapus data ini?')">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit"
-                                        style="padding: 5px 10px; background-color: #e74c3c; color: white; border: none; border-radius: 4px;">
-                                    🗑️ Hapus
-                                </button>
+                               <td style="text-align: center;">
+    <button type="submit"
+        style="padding: 5px 10px; background-color: #e74c3c; color: white; border: none; border-radius: 4px;">
+        🗑️ Hapus
+    </button>
+</td>
+
                             </form>
                         </td>
                     </tr>
