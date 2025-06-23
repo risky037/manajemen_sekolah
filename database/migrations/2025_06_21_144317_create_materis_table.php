@@ -15,7 +15,7 @@ class CreateMaterisTable extends Migration
             $table->id();
             $table->string('judul');
             $table->text('deskripsi');
-            $table->foreignId('mapel_id')->constrained('mapels')->onDelete('cascade');
+            $table->foreignId('mapel_id')->constrained('mata_pelajarans')->onDelete('cascade');
             $table->timestamps();
         });
     }
